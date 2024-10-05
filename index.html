@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.3/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+<body style=" font-family: cursive !important; font-weight: 700; font-size: 20px; background-color: #e1e2dd ;">
+
+      <header style="height: 10vh;">
+      
+        <nav class="navbar navbar-expand-lg"
+          style="position: fixed; z-index: 1000; width: 100%; background-color: #fbedea !important; ">
+          <img src="images/loggo.jpg" class="rounded-circle" alt="..." style="width: 80px; height: 80px;">
+          &nbsp;
+          &nbsp;
+          <a class="navbar-brand" href="#" style="color: #2d2d2c;">Piccolino</a>
+          <button
+            style="padding-left: 3rem; color: #f5f7f7; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important ;"
+            class="navbar-toggler bg-secondary" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item ">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown border-scale" style="border: 1.5px solid gray;">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Chicken</a>
+                  <a class="dropdown-item" href="#">Meat</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Pizza</a>
+                  <a class="dropdown-item" href="#">Burgar</a>
+                  <a class="dropdown-item" href="#">sweets</a>
+                  <a class="dropdown-item" href="#">juice</a>
+                  <a class="dropdown-item" href="#">More...</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2 bg-light inpt-search" type="search" placeholder="Search" aria-label="Search">
+              &nbsp;
+              <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+              &nbsp;
+              <!-- //////////////////////////////////// -->
+            
+              <button id="openLoginForm" class="btn btn-outline-primary">Login</button>
+            
+            
+              <!-- الفورم اللي بيظهر في نص الصفحة -->
+              <div id="loginForm" class="form-popup">
+                <form>
+                  <h4 class="text-center">Login</h4>
+            
+                  <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                    <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                  </div>
+            
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter password" required>
+                  </div>
+            
+                  <div class="custom-control custom-switch remember-me">
+                    <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                    <label class="custom-control-label" for="customSwitch1">Remeber Me</label>
+                  </div>
+            
+                  <button type="submit" class="btn btn-primary btn-block mt-3">Login</button>
+                  <button type="button" class="btn btn-secondary btn-block mt-2" id="closeForm">Close</button>
+                </form>
+              </div> <!-- ///////////////////////////////// -->
+            </form>
+          </div>
+        </nav>
+      
+      </header>
+      
+      <aside> <!-- aside icons -->
+        <div class="social-icons">
+          <a href="https://www.facebook.com/login.php/" class="btn btn-primary mb-2 hero-icons" target="_blank" ><i class="bi bi-facebook"></i></a>
+          <a href="https://web.whatsapp.com/" class="btn btn-success mb-2 hero-icons" target="_blank" ><i class="bi bi-whatsapp"></i></a>
+          <a href="https://www.linkedin.com/login" class="btn btn-info mb-2 hero-icons" target="_blank" ><i class="bi bi-linkedin"></i></a>
+          <a href="https://www.instagram.com/" class="btn btn-dark mb-2 hero-icons" target="_blank" ><i class="bi bi-instagram"></i></a>
+        </div>
+      </aside>
+  
+    
+      <main> <!-- carousel section -->
+
+        <div class="container-fluid">     <!-- carousel section -->
+          <div id="demo" class="carousel slide" data-ride="carousel">
+  
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+              <li data-target="#demo" data-slide-to="3"></li>
+            </ul>
+          
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/pasta3.jpg" alt="Los Angeles" class="w-100">
+  
+                <div class="carousel-caption">
+                  <h3>Italian Pasta</h3>
+                  <p>We had such a great Pasta!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/pizzaindx1.jpg" alt="New York" class="w-100">
+  
+                <div class="carousel-caption">
+                  <h3>Italian Pizaa</h3>
+                  <p>We had such a great Pizaa!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/carousel indx2.jpg" alt="New York" class="w-100">
+  
+                <div class="carousel-caption">
+                  <h3>Italian Meat</h3>
+                  <p>We had such a great Meat!</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/carousel indx3.jpg" alt="New York" class="w-100">
+  
+                <div class="carousel-caption">
+                  <h3>Italian Burger</h3>
+                  <p>We had such a great Burger!</p>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          
+          </div>
+        </div>
+
+      </main>
+
+      <section>  <!-- welcome card -->
+
+
+        <div class="card" style="background: burlywood;">
+          <div class="card-body appears-content">
+            <h5 class="card-title" style="color: beige;">Best Italian Food In Napoli !</h5>
+            <p class="card-text" style="color: brown;">Our team of chefs presents amazing dishes. Are you excited to try their dishes?</p>
+            <a href="#" class="btn btn-dark" style="background-color: firebrick;">Know Our Dishes</a>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <section> <!-- Headlines -->
+      
+        <div class="card" style="text-align: center; background-color: darkgrey;">
+          <div class="card-body">
+            <h5 class="card-title">One Of The Best 10 Restaurant Around The World !</h5>
+          </div>
+        </div>
+      </section>
+
+      &nbsp;
+
+      <section> <!-- collapse section -->
+
+        <div id="accordion">
+
+          <div class="card" style="background-color: lightsteelblue;">
+            <div class="card-header">
+              <a class="card-link" data-toggle="collapse" href="#collapseOne" style="color: #300000;">
+                Our Location
+              </a>
+            </div>
+            <div id="collapseOne" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                Santa Maria di Costantinopoli, 11, 80135 Napoli NA.
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="background-color: lightskyblue;">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo" style="color: #300000;">
+                Our Best Dishes
+              </a>
+            </div>
+            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                Pizza and wings
+                Subway - breakfast and fresh daily sandwiches
+                Taco Bell - Mexican pizza, tacos, burritos, quesadillas
+              </div>
+            </div>
+          </div>
+        
+          <div class="card" style="background-color: #75c1ef;">
+            <div class="card-header">
+              <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree" style="color: #300000;">
+                Our Rank In The World #
+              </a>
+            </div>
+            <div id="collapseThree" class="collapse" data-parent="#accordion">
+              <div class="card-body">
+                We Have Earned The Forth Rank Around The World And The Best In Italy !!
+              </div>
+            </div>
+          </div>
+        
+        </div>
+
+      </section>
+
+      <hr>
+
+      <section> <!-- Headlines -->
+      
+        <div class="card" style="text-align: center;     background-color: darkgrey;">
+          <div class="card-body">
+            <h5 class="card-title">Do Not Hesitate If You Have Any Opinions About Our Restaurant.</h5>
+          </div>
+        </div>
+      </section>
+      <hr>
+
+      <section> <!-- text area section -->
+      
+        <div class="card" style="background: repeating-linear-gradient(45deg, darkgray, transparent 100px);">
+          <div class="card-body">
+            <h5 class="card-title" style="color: darkblue;">Write Your Opinion <span style="color: darkmagenta;">Press Here</span> </h5>
+        
+        
+            <!-- Button to Open the Modal -->
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#Copy" style="color: white;
+            background: linear-gradient(45deg, darkblue, transparent);" >
+              copy
+            </button>
+        
+            <!-- The Modal -->
+            <div class="modal fade" id="Copy">
+              <div class="modal-dialog">
+                <div class="modal-content">
+        
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Picollonio.res@gmail.com</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+        
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    copied
+                  </div>
+        
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal">ok</button>
+                  </div>
+        
+                </div>
+              </div>
+            </div>
+      
+            <form>
+      
+              <div class="form-group">
+                <br>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                  placeholder="Write Your Opinion" style="background: linear-gradient(45deg, purple, transparent); color: white;"></textarea>
+              </div>
+      
+            </form>
+          </div>
+        </div>
+      
+      </section>
+      <hr>
+
+      <section> <!-- Headlines -->
+      
+        <div class="card" style="text-align: center;     background-color: darkgrey;">
+          <div class="card-body">
+            <h5 class="card-title">Do Not Forget To Evaluate Our Service.</h5>
+          </div>
+        </div>
+      </section>
+
+      <section> <!-- text area section -->
+      
+        <div class="card" style="background: repeating-linear-gradient(45deg, whitesmoke, transparent 100px);">
+          <div class="card-body">
+            <h5 class="card-title" style="color: darkblue;">Write Your Opinion <span style="color: darkmagenta;">Press Here</span> </h5>
+        
+        
+            <!-- Button to Open the Modal -->
+            <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#Copy" style="color: white;
+            background: linear-gradient(45deg, darkblue, transparent);" >
+              copy
+            </button>
+        
+            <!-- The Modal -->
+            <div class="modal fade" id="Copy">
+              <div class="modal-dialog">
+                <div class="modal-content">
+        
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Picollonio.res@gmail.com</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+        
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    copied
+                  </div>
+        
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal">ok</button>
+                  </div>
+        
+                </div>
+              </div>
+            </div>
+      
+            <form>
+      
+              <div class="form-group">
+                <br>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                  placeholder="Write Your Opinion" style="background: linear-gradient(45deg, darkblue, transparent); color: white;"></textarea>
+              </div>
+      
+            </form>
+          </div>
+        </div>
+      
+      </section>
+      <hr>
+
+      <section> <!-- overlay section -->
+
+          <div class="parent1"  style="position: relative;background-image: url(images/overlay1ed.png); height: 60vh; background-repeat:round ; background-size: cover;  background-attachment: fixed; ">
+
+            <div class="overlay-section-1" style="position: absolute; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6);">
+            </div>
+
+          </div>
+          
+
+      </section>
+
+      <section> <!-- Headlines -->
+      
+        <div class="card" style="text-align: center; background-color: darkgrey;">
+          <div class="card-body">
+            <h5 class="card-title">The Best And Top Selling Dishes !</h5>
+          </div>
+        </div>
+      </section>
+
+      &nbsp;
+
+      <section>  <!-- food section --> 
+        <div class="container"> 
+          <div class="row">
+  
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 margin-bottom">
+              <div class="card effect">
+                <img src="images/pasta pec2.jpg" class="card-img-top img-thumbnail" alt="..." style="height: 164px;">
+                <div class="card-body appears-content">
+                  <h5 class="card-title">Italian Pasta</h5>
+                  <p class="card-text">Taste Italian Food.</p>
+                  <a href="#" class="btn btn-warning">Know More</a>
+                </div>
+              </div>
+    
+            </div> <!-- div1 -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 margin-bottom mid">
+              <div class="card effect">
+                <img src="images/Ai Burger.jpg" class="card-img-top img-thumbnail" alt="..." >
+                <div class="card-body appears-content">
+                  <h5 class="card-title">Italian Burger</h5>
+                  <p class="card-text">Taste Italian Food.</p>
+                  <a href="#" class="btn btn-warning">Know More</a>
+                </div>
+              </div>
+            </div> <!-- div2 -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 margin-bottom">
+              <div class="card effect">
+                <img src="images/Gatou.jpg" class="card-img-top img-thumbnail" alt="..."  style="height: 164px;" >
+                <div class="card-body appears-content">
+                  <h5 class="card-title">Italian Sweets</h5>
+                  <p class="card-text">Taste Italian Food.</p>
+                  <a href="#" class="btn btn-warning">Know More</a>
+                </div>
+              </div>
+    
+            </div> <!-- div3 -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 margin-bottom cr">
+              <div class="card effect">
+                <img src="images/ice juice.jpg"class="card-img-top img-thumbnail" alt="..." style="height: 215px;" >
+                <div class="card-body appears-content">
+                  <h5 class="card-title">Italian Beach</h5>
+                  <p class="card-text">Taste Italian Food.</p>
+                  <a href="#" class="btn btn-warning">Know More</a>
+                </div>
+              </div>
+    
+            </div> <!-- div4 -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 margin-bottom cr mid">
+              <div class="card effect">
+                <img src="images/pec2.jpg" class="card-img-top img-thumbnail" alt="..." >
+                <div class="card-body appears-content">
+                  <h5 class="card-title">Italian Orange</h5>
+                  <p class="card-text">Taste Italian Food.</p>
+                  <a href="#" class="btn btn-warning">Know More</a>
+                </div>
+              </div>
+    
+            </div> <!-- div5 -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 margin-bottom cr">
+              <div class="card effect">
+                <img src="images/seafood.jpg" class="card-img-top img-thumbnail" alt="..." style="height: 215px;">
+                <div class="card-body appears-content">
+                  <h5 class="card-title">Italian Sea Food</h5>
+                  <p class="card-text">Taste Italian Food.</p>
+                  <a href="#" class="btn btn-warning">Know More</a>
+                </div>
+              </div>
+    
+            </div> <!-- div6 -->
+  
+            <div class="col-12 col-sm-4 col-lg-4 cr margin-bottom">
+  
+              <div class="card effect">
+
+                <img src="images/pizza carousel (2).jpg" class="card-img-top img-thumbnail" alt="..." style="height: 190px;">
+                <div class="card-body appears-content">
+                  <h5 class="card-title">Italian Pizza</h5>
+                  <p class="card-text">Taste Italian Food.</p>
+                  <a href="#" class="btn btn-warning">Know More</a>
+                </div>
+              </div>
+  
+            </div> <!-- div7 -->
+            <div class="col-12 col-sm-2 col-lg-4 cr "></div>
+            <div class="col-12 col-sm-4 col-lg-4 cr margin-bottom">
+              <div class="card effect">
+                <img src="images/seafood2.jpg" class="card-img-top img-thumbnail" alt="...">
+                <div class="card-body appears-content">
+                  <h5 class="card-title">Italian Dish</h5>
+                  <p class="card-text">Taste Italian Food.</p>
+                  <a href="#" class="btn btn-warning">Know More</a>
+                </div>
+              </div>
+  
+            </div> <!-- div8 -->
+       
+          </div> <!-- row -->
+  
+          
+        </div> <!-- container -->
+
+      </section>
+
+      <hr>
+
+      <section> <!-- overlay section 2 -->
+
+        <div class="parent1"  style="position: relative;background-image: url(images/overlay\ section2.jpg); height: 60vh; background-repeat:round ; background-size: cover;  background-attachment: fixed; ">
+
+          <div class="overlay-section-1" style="position: absolute; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.6);">
+          </div>
+
+        </div>
+        
+
+      </section>
+      <hr>
+
+      <section> <!-- Headlines -->
+      
+        <div class="card" style="text-align: center; background-color: darkgrey;">
+          <div class="card-body">
+            <h5 class="card-title">Thanks For..</h5>
+          </div>
+        </div>
+      </section>
+      <br>
+      <br>
+      <br>
+
+      <section> <!-- chiefs -->
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 skew">
+      
+              <div class="card bg-dark text-white">
+                <img src="images/chief 1.jpg" class="card-img rounded" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">All Thanks And Appreciation</h5>
+                  <p class="card-text">October 20 , 2022</p>
+                  <div class="same-chief" style="width: 30%; height: 39%; position: absolute; top: 45%; left: 6%;">
+                    <img src="images/chief 1.jpg" class="card-img rounded-circle" alt=".."
+                      style="width: 100%; height: 100%;">
+                  </div>
+                  <div class="same-content-chief" style="position: absolute; top: 85%;">
+                    <p class="card-text" style="color: rgb(255, 255, 255)">Chief Francesco Director</p>
+
+                  </div>
+              
+                </div>
+              </div>
+      
+            </div> <!-- first chief -->
+      
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 skew">
+      
+              <div class="card bg-dark text-white">
+                <img src="images/chief 2.jpg" class="card-img rounded" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title middl">All Thanks And Appreciation</h5>
+                  <p class="card-text middl">October 20 , 2022</p>
+                  <div class="same-chief" style="width: 30%; height: 39%; position: absolute; top: 45%; left: 6%;">
+                    <img src="images/chief 2.jpg" class="card-img rounded-circle" alt=".."
+                      style="width: 100%; height: 100%;">
+                  </div>
+                  <div class="same-content-chief" style="position: absolute; top: 85%;">
+                    <p class="card-text middl">Chief Francesco Director</p>
+
+                  </div>
+                  
+                </div>
+              </div>
+      
+            </div> <!-- second chief -->
+      
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 skew">
+      
+              <div class="card bg-dark text-white">
+                <img src="images/chief 3.jpg" class="card-img rounded" alt="...">
+                <div class="card-img-overlay">
+                  <h5 class="card-title">All Thanks And Appreciation</h5>
+                  <p class="card-text">October 20 , 2022</p>
+                  <div class="same-chief" style="width: 30%; height: 39%; position: absolute; top: 45%; left: 6%;">
+                    <img src="images/chief 3.jpg" class="card-img rounded-circle" alt=".."
+                      style="width: 100%; height: 100%;">
+                  </div>
+                  <div class="same-content-chief" style="position: absolute; top: 85%;">
+                    <p class="card-text" style="color: rgb(255, 255, 255)">Chief Francesco Director</p>
+
+                  </div>
+              
+                </div>
+              </div>
+      
+            </div> <!-- third chief -->
+      
+          </div> <!-- row -->
+      
+        </div> <!-- container -->
+      
+      </section>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <hr>
+
+
+      <section> <!-- media cards -->
+        <div class="container mt-5">
+          <div class="row justify-content-center">
+            <div class="col-lg-12"> <!-- الكارد أصبح أكبر -->
+              <div class="card custom-card shadow-lg">
+                <div class="row no-gutters">
+                  <!-- النص -->
+                  <div class="col-12 col-md-7 order-md-1 order-2 organized">
+                    <div class="card-body custom-card-body">
+                      <h5 class="card-title">Snacks Section (Burger...)</h5>
+                      <p class="card-text date-text">
+                        <small class="text-muted">May 25th, 2024</small>
+                        <span class="hover-line"></span>
+                      </p>
+                      <p class="card-text">At Piccolino, enjoy our mouthwatering Italian burger—juicy beef, fresh herbs, and classic Italian toppings all packed in a soft bun. A true Italian twist on a classic favorite!</p>
+                      
+                      <!-- الزرائر الثلاثة -->
+                      <a href="#" class="btn btn-outline-danger">Burger..</a>
+                      <a href="#" class="btn btn-outline-dark">Order Now</a>
+                      <a href="#" class="btn btn-outline-warning">Add To Card!</a>
+                    </div>
+                  </div>
+                  <!-- الصورة -->
+                  <div class="col-12 col-md-5 order-md-2 order-1">
+                    <img src="images/second-cardd.jpg" class="img-fluid custom-img" alt="Card image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <section> <!-- media cards -->
+        <div class="container mt-5">
+          <div class="row justify-content-center">
+            <div class="col-12"> <!-- الكارد أصبح أكبر -->
+              <div class="card custom-card shadow-lg">
+                <div class="row no-gutters">
+                  <!-- الصورة -->
+                  <div class="col-md-5">
+                    <img src="images/first-cardd.jpg" class="img-fluid custom-img" alt="Card image">
+                  </div>
+                  <!-- النص -->
+                  <div class="col-md-7 organized">
+                    <div class="card-body custom-card-body">
+                      <h5 class="card-title">The Best (Pasta...)</h5>
+                      <p class="card-text date-text">
+
+                        <small class="text-muted">May 25th, 2024</small>
+                        <span class="hover-line"></span>
+
+                      </p>
+                        
+                      <p class="card-text">At Piccolino, experience the rich flavors of authentic Italian pasta paired with tender, perfectly seasoned beef. Each bite is a taste of Italy, crafted with love and tradition!</p>
+                      </p>
+                      <!-- الزرائر الثلاثة -->
+                      <a href="#" class="btn btn-outline-danger">Pasta..</a>
+                      <a href="#" class="btn btn-outline-info">Oreder Now</a>
+                      <a href="#" class="btn btn-outline-warning">Add To Card!</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+      <hr>
+
+      <section> <!-- media cards -->
+        <div class="container mt-5">
+          <div class="row justify-content-center">
+            <div class="col-lg-12"> <!-- الكارد أصبح أكبر -->
+              <div class="card custom-card shadow-lg">
+                <div class="row no-gutters">
+                  <!-- النص -->
+                  <div class="col-12 col-md-7 order-md-1 order-2 organized">
+                    <div class="card-body custom-card-body">
+                      <h5 class="card-title">Our Main Dish (Pizza...)</h5>
+                      <p class="card-text date-text">
+                        <small class="text-muted">May 25th, 2024</small>
+                        <span class="hover-line"></span>
+                      </p>
+                      <p class="card-text">At Piccolino, indulge in our authentic Italian pizza, crafted with fresh ingredients, hand-tossed dough, and rich, flavorful toppings. A true taste of Italy in every slice!</p>
+                      
+                      <!-- الزرائر الثلاثة -->
+                      <a href="#" class="btn btn-outline-danger">Pizza..</a>
+                      <a href="#" class="btn btn-outline-dark">Order Now</a>
+                      <a href="#" class="btn btn-outline-warning">Add To Card!</a>
+                    </div>
+                  </div>
+                  <!-- الصورة -->
+                  <div class="col-12 col-md-5 order-md-2 order-1">
+                    <img src="images/piza.jpg" class="img-fluid custom-img" alt="Card image">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr>
+
+      <section> <!-- media cards -->
+        <div class="container mt-5">
+          <div class="row justify-content-center">
+            <div class="col-12"> <!-- الكارد أصبح أكبر -->
+              <div class="card custom-card shadow-lg">
+                <div class="row no-gutters">
+                  <!-- الصورة -->
+                  <div class="col-md-5">
+                    <img src="images/the forth-card.jpg" class="img-fluid custom-img" alt="Card image">
+                  </div>
+                  <!-- النص -->
+                  <div class="col-md-7 organized">
+                    <div class="card-body custom-card-body">
+                      <h5 class="card-title">Chocolate Cake...</h5>
+                      <p class="card-text date-text">
+
+                        <small class="text-muted">May 25th, 2024</small>
+                        <span class="hover-line"></span>
+
+                      </p>
+                        
+                      <p class="card-text">At Piccolino, treat yourself to our decadent Italian cake—light, moist, and bursting with rich flavors. A sweet slice of Italy in every bite!</p>
+                      </p>
+                      <!-- الزرائر الثلاثة -->
+                      <a href="#" class="btn btn-outline-danger">Cake..</a>
+                      <a href="#" class="btn btn-outline-info">Order Now</a>
+                      <a href="#" class="btn btn-outline-warning">Add To Card!</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <br> 
+      <br>
+      <hr>
+
+      
+    <section class="icon-section" style="background-color: rgb(18, 7, 57);"> <!-- Icons Section -->
+      <div class="container">
+        <div class="row">
+          <div class="col-6 col-md-3 mb-3 big-div">
+            <div>
+              <h5>Visit Us on Twitter</h5>
+              <img src="images/twitter 1.jpg" alt="" class="icos-img">
+              <a href="https://x.com/" class="btn btn-secondary Go-to-link" target="_blank">Go to link</a>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-3 big-div">
+            <div>
+              <h5>Contact Us On Caller</h5>
+              <img src="images/call 2.jpg" alt="" class="icos-img">
+              <a href="https://contact.eg/contact-us" class="btn btn-secondary Go-to-link" target="_blank">Go to link</a>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-3 big-div">
+            <div>
+              <h5>Visit Us on Linked In</h5>
+              <img src="images/linked in 1.jpg" alt="" class="icos-img">
+              <a href="https://www.linkedin.com/login" class="btn btn-secondary Go-to-link" target="_blank">Go to link</a>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 mb-3 big-div">
+            <div>
+              <h5>Visit Us on Instagram</h5>
+              <img src="images/insta 4.jpg" alt="" class="icos-img">
+              <a href="https://www.instagram.com/" class="btn btn-secondary Go-to-link" target="_blank">Go to link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <footer class="footer-section"> <!-- Footer Section -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 mb-3">
+            <h5 style="border-bottom: 1px solid rgb(255, 234, 0) ;">Good Restaurant</h5>
+            <img src="images/loggo.jpg" alt="" class="footer-img">
+            <p>Tel: 000-111-222</p>
+            <p>Address: Napoly</p>
+            <p style="border-bottom: 1px solid rgb(255, 234, 0) ;">Fax: 000-111-222</p>
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <h5 style="border-bottom: 1px solid rgb(255, 234, 0) ;">Information About Us</h5>
+            <img src="images/loggo.jpg" alt="" class="footer-img">
+            <p><a href="#" style="color: white;">Visit Us</a></p>
+            <p><a href="#" style="color: white;">Take a look</a></p>
+            <p style="border-bottom: 1px solid rgb(255, 234, 0) ;">Your health is more important</p>
+          </div>
+          <div class="col-12 col-md-4 mb-3">
+            <h5 style="border-bottom: 1px solid rgb(255, 234, 0) ;">Vision</h5>
+            <img src="images/loggo.jpg" alt="" class="footer-img">
+            <p>Services for all</p>
+            <p>Provide best services</p>
+            <p style="border-bottom: 1px solid rgb(255, 234, 0) ;">You will be better than before</p>
+          </div>
+        </div>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+
+
+
+      
+      
+   
+    
+
+      
+      
+
+
+
+
+
+      
+      
+      
+
+
+
+
+
+
+
+      
+
+    
+    
+     
+
+
+
+
+
+
+
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script>
+    // Login
+    document.getElementById('openLoginForm').addEventListener('click', function() {
+      document.getElementById('loginForm').style.display = 'block';
+    });
+
+    // close 
+    document.getElementById('closeForm').addEventListener('click', function() {
+      document.getElementById('loginForm').style.display = 'none';
+    });
+  </script>
+
+    
+</body>
+</html>
